@@ -20,6 +20,7 @@ class MemberRepositoryTest {
         //then -결과가 어떤것이야 한다.
         Member findMember = memberRepository.findById(savedMember.getId());
         assertThat(findMember).isEqualTo(savedMember);
+
     }
     @Test
     void findAll() {
